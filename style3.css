@@ -1,0 +1,36 @@
+body {
+    background-image: url("Bakgrundsbildseychellerna.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    
+}   
+
+div {
+    background-color: rgb(226, 153, 216);
+    width: 150px;
+    color: white;
+}
+
+img {
+    float: inherit;
+    width: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    width: 10px;
+}
+button {
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+}
