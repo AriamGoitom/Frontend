@@ -4,10 +4,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    
-}   
+} 
 
-div {
+.text-container {
     background-color: rgb(226, 153, 216);
     width: 150px;
     color: white;
@@ -19,12 +18,14 @@ img {
     margin-right: 100px;
     border-radius: 50px;
 }
+
 a {
     text-decoration: none;
     font-weight: bold;
     color: black;
     width: 10px;
 }
+
 button {
     font-weight: bold;
     border-radius: 10px;
@@ -33,4 +34,46 @@ button {
     height: 30px;
     width: 200px;
     cursor: pointer;
+}
+
+div {
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    height: 50vh;
+}
+
+.container p {
+    color: black;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+
+}
+ h1 {
+    padding-left: 40%;
+    color: blue;
+}
+
+.left {
+    grid-area: left;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+    top: 0px;
+}
+
+.footer {
+    grid-area: footer;
 }
