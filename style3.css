@@ -21,7 +21,6 @@ img {
 
 a {
     text-decoration: none;
-    font-weight: bold;
     color: black;
     width: 10px;
 }
@@ -43,6 +42,7 @@ div {
 .container {
     width: 50%;
     height: 50vh;
+    text-align: left;
 }
 
 .container p {
@@ -54,12 +54,28 @@ div {
     top: 0;
     left: 0;
     justify-content: center;
-
 }
+
  h1 {
     padding-left: 40%;
-    color: blue;
+    color: white;
 }
+
+footer p {
+    line-height: 5px;
+    color: black;
+}
+
+.footer-container a {
+    color: black;
+}
+
+
+
+
+
+
+
 
 .left {
     grid-area: left;

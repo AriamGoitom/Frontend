@@ -1,0 +1,22 @@
+h1 {
+    color: pink;
+    font-weight: bold;
+}
+
+label {
+    color: rgb(218, 117, 208);
+    margin-top: 10px;
+}
+input {
+    position:absolute;
+    left: rem;
+    display:block;
+    margin-bottom: 10rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+}
