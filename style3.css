@@ -1,22 +1,76 @@
+/* "CSS på body-elementet. Jag har använt bl. a. background-image, background-size samt background-position." */
+
 body {
-    background-image: url("Bakgrundsbildseychellerna.jpg");
+    background-image: url("Bakgrundsbild.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
 } 
 
-.text-container {
-    background-color: rgb(226, 153, 216);
-    width: 150px;
+.container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: 
+    "header header header"
+    "left main right"
+    "footer footer footer";
+}
+
+/* "CSS på h1-element" */
+
+.header {
+    text-align: center;
+    grid-area: header;
+}
+
+h1 {
+    font-family: "Lobster";
+    font-size: 45px;
+    color: white;
+    position: sticky;
+}
+
+p {
     color: white;
 }
 
-img {
-    float: inherit;
-    width: 100px;
-    margin-right: 100px;
-    border-radius: 50px;
+#p {
+    color: white;
+}
+
+/* "CSS i classen text-container där jag har använt text-align, padding-top och border-radius m.m." */
+
+
+.text-container {
+    background-color: rgb(226, 153, 216);
+    width: 210px;
+    font-size: 13px;
+    color: white;
+    margin-top: 60px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px; 
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+
+.left {
+    color: white;
+}
+
+.main img {
+    size: small;
+    width: 120px;
+    margin-left: 40px;
+    border-radius: 55px;
+}
+
+.right img {
+    margin-top: 700px;
+    margin-left: 100px;
+    width: 350px;
 }
 
 a {
@@ -25,13 +79,21 @@ a {
     width: 10px;
 }
 
+/* "CSS på button-elementet. Jag har lagt in bl. a. font-weight, background-color, margin-top samt cursor." */
+
 button {
     font-weight: bold;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    height: 30px;
-    width: 200px;
+    font-size: 10px;
+    border: none;
+    border-radius: 68px;
+    color: white;
+    background-color: rgb(46, 164, 79);
+    height: 20px;
+    width: 135px;
+    margin-top: 10px;
+    margin-right: 270px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     cursor: pointer;
 }
 
@@ -39,11 +101,7 @@ div {
     text-align: center;
 }
 
-.container {
-    width: 50%;
-    height: 50vh;
-    text-align: left;
-}
+/* "CSS i classen container." */
 
 .container p {
     color: black;
@@ -56,11 +114,6 @@ div {
     justify-content: center;
 }
 
- h1 {
-    padding-left: 40%;
-    color: white;
-}
-
 footer p {
     line-height: 5px;
     color: black;
@@ -70,26 +123,43 @@ footer p {
     color: black;
 }
 
+/* "CSS på media queries för att anpassa i mobil-version. Jag har ändrat i body, h1, text-container och img." */
 
+@media screen and (max-width: 900px) {
+    body {
+        
+    }
 
+    h1 {
+        color: white;
+        margin-right: 100px;
+    }
 
+    .text-container {
+        margin-top: 165px;
+        margin-left: 300px;
+    }
 
+    .main img {
+        margin-left: 5px;
+        max-width: 90px;
+    }
 
-
-
-.left {
-    grid-area: left;
+    button {
+        width: 135px;
+        height: 20px;
+        font-size: 10px;
+        margin-left: 310px;
+        padding-top: 4px;
+        padding-bottom: 15px;
+        background-color: rgb(53, 144, 235);
+        border-radius: 68px;
+    }
 }
 
-.main {
-    grid-area: main;
-}
-
-.right {
-    grid-area: right;
-    top: 0px;
-}
-
-.footer {
-    grid-area: footer;
+@media screen and (max-width: 400px) {
+    .right img {
+        margin-left: 1px;
+        margin-top: 650px;
+    }
 }
