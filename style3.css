@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 } 
 
 .container {
@@ -57,7 +58,12 @@ p {
 }
 
 .left {
+    grid-area: left;
     color: white;
+}
+
+.main {
+    grid-area: main;
 }
 
 .main img {
@@ -67,6 +73,9 @@ p {
     border-radius: 55px;
 }
 
+.right {
+    grid-area: right;
+}
 .right img {
     margin-top: 700px;
     margin-left: 100px;
@@ -91,8 +100,8 @@ button {
     height: 20px;
     width: 135px;
     margin-top: 10px;
-    margin-right: 270px;
-    padding-top: 5px;
+/*     margin-right: 270px;
+ */    padding-top: 5px;
     padding-bottom: 15px;
     cursor: pointer;
 }
@@ -114,52 +123,50 @@ div {
     justify-content: center;
 }
 
-footer p {
+.footer-container{
+    grid-area: footer;
+    text-align: center;
+   
+    color: black;
     line-height: 5px;
-    color: black;
 }
 
-.footer-container a {
-    color: black;
-}
-
-/* "CSS på media queries för att anpassa i mobil-version. Jag har ändrat i body, h1, text-container och img." */
-
+/* "CSS på media queries för att anpassa i iPad Air med max-width: 900px. Jag har testat och det blir responsivt" */
+ 
 @media screen and (max-width: 900px) {
+
+}
+
+/* "CSS på media queries för att anpassa i mobil-version iPhone SE. Jag har ändrat i body, h1, text-container och img. Jag har testat och det blir responsivt" */
+
+@media screen and (max-width: 400px) {
     body {
-        
+        background-size:
+        background-position
     }
 
     h1 {
-        color: white;
-        margin-right: 100px;
+        font-size: 30px;
+        margin-left: 20px;
     }
 
     .text-container {
-        margin-top: 165px;
-        margin-left: 300px;
+        margin-left: 170px;
+        margin-top: 170px;
+
+    }
+
+    .button {
+        margin-left: 70vw;
+        justify-self: right
     }
 
     .main img {
-        margin-left: 5px;
-        max-width: 90px;
+        margin-left: 120px;
     }
 
-    button {
-        width: 135px;
-        height: 20px;
-        font-size: 10px;
-        margin-left: 310px;
-        padding-top: 4px;
-        padding-bottom: 15px;
-        background-color: rgb(53, 144, 235);
-        border-radius: 68px;
-    }
-}
-
-@media screen and (max-width: 400px) {
     .right img {
         margin-left: 1px;
-        margin-top: 650px;
+        width: 200px;
     }
 }
