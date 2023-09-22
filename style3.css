@@ -17,12 +17,12 @@ body {
     "footer footer footer";
 }
 
-/* "CSS på h1-element" */
-
 .header {
     text-align: center;
     grid-area: header;
 }
+
+/* "CSS på h1-element" */
 
 h1 {
     font-family: "Lobster";
@@ -31,16 +31,13 @@ h1 {
     position: sticky;
 }
 
-p {
-    color: white;
-}
+/* Id används här jus för att stilsätta paragrafen */
 
 #p {
     color: white;
 }
 
 /* "CSS i classen text-container där jag har använt text-align, padding-top och border-radius m.m." */
-
 
 .text-container {
     background-color: rgb(226, 153, 216);
@@ -76,10 +73,11 @@ p {
 .right {
     grid-area: right;
 }
+
 .right img {
     margin-top: 700px;
-    margin-left: 100px;
-    width: 350px;
+    margin-left: -200px;
+    width: 250px;
 }
 
 a {
@@ -100,8 +98,7 @@ button {
     height: 20px;
     width: 135px;
     margin-top: 10px;
-/*     margin-right: 270px;
- */    padding-top: 5px;
+    padding-top: 5px;
     padding-bottom: 15px;
     cursor: pointer;
 }
@@ -118,15 +115,13 @@ div {
 
 .header {
     position: relative;
-    top: 0;
-    left: 0;
+
     justify-content: center;
 }
 
-.footer-container{
+.footer-container {
     grid-area: footer;
     text-align: center;
-   
     color: black;
     line-height: 5px;
 }
@@ -137,36 +132,8 @@ div {
 
 }
 
-/* "CSS på media queries för att anpassa i mobil-version iPhone SE. Jag har ändrat i body, h1, text-container och img. Jag har testat och det blir responsivt" */
+/* "CSS på media queries för att anpassa i mobil-version iPhone SE med max-width 400px. Jag har testat och det blir responsivt" */
 
 @media screen and (max-width: 400px) {
-    body {
-        background-size:
-        background-position
-    }
 
-    h1 {
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    .text-container {
-        margin-left: 170px;
-        margin-top: 170px;
-
-    }
-
-    .button {
-        margin-left: 70vw;
-        justify-self: right
-    }
-
-    .main img {
-        margin-left: 120px;
-    }
-
-    .right img {
-        margin-left: 1px;
-        width: 200px;
-    }
 }

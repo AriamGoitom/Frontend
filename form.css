@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Jag har valt färg samt fet stil för h1*/
+/* Jag har valt färg samt fet stil för h1 */
 
 h1 {
     color: black;
@@ -23,8 +23,6 @@ input {
     position:absolute;
     display:block;
     margin-bottom: 10rem;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 button {
@@ -35,6 +33,8 @@ button {
     border-width: 1px;
     color: rgb(218, 117, 208);
 }
+
+/* En submitknapp till formulär */
 
 #submit {
     margin-top: 10px;
